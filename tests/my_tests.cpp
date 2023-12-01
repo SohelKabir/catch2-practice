@@ -1,7 +1,11 @@
 // my_tests.cpp
-
+#define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do this in one cpp file
 #include "../catch.hpp"
-#include "../src/main.cpp"
+
+int add(int a, int b)
+{
+    return a + b;
+}
 
 TEST_CASE("Addition Test", "[add]")
 {
